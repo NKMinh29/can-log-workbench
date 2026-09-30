@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "source": "sample.csv",
+  "data_kind": "synthetic",
+  "frame_count": 8,
+  "unique_ids": 3,
+  "first_timestamp_us": 0,
+  "last_timestamp_us": 4500,
+  "observation_span_us": 4500,
+  "by_id": [
+    {
+      "can_id": "000",
+      "frames": 1,
+      "payload_bytes": 0,
+      "observed_interarrival_us": {
+        "count": 0,
+        "min": null,
+        "median": null,
+        "mean": null,
+        "max": null
+      }
+    },
+    {
+      "can_id": "123",
+      "frames": 4,
+      "payload_bytes": 8,
+      "observed_interarrival_us": {
+        "count": 3,
+        "min": 1000,
+        "median": 1000,
+        "mean": 1333.3333333333333,
+        "max": 2000
+      }
+    },
+    {
+      "can_id": "200",
+      "frames": 3,
+      "payload_bytes": 3,
+      "observed_interarrival_us": {
+        "count": 2,
+        "min": 2000,
+        "median": 2000.0,
+        "mean": 2000,
+        "max": 2000
+      }
+    }
+  ],
+  "limitations": [
+    "Observed log interarrival times are not MCU processing times.",
+    "Bus utilization and frame loss cannot be inferred from this report.",
+    "Classic CAN 11-bit data frames only; the full file is held in memory."
+  ]
+}
