@@ -1,0 +1,20 @@
+test_cli_invalid_input_creates_no_report (test_analyze.CANLogTests.test_cli_invalid_input_creates_no_report) ... Error: Line 2: payload length does not match DLC
+ok
+test_cli_will_not_overwrite_existing_report (test_analyze.CANLogTests.test_cli_will_not_overwrite_existing_report) ... usage: python3 -m unittest [-h] [--out OUT]
+                           [--data-kind {synthetic,measured,unspecified}]
+                           input
+python3 -m unittest: error: Output report already exists; choose a new --out directory
+ok
+test_cli_writes_reports_with_correct_sample (test_analyze.CANLogTests.test_cli_writes_reports_with_correct_sample) ... ok
+test_empty_log_and_html_escaping (test_analyze.CANLogTests.test_empty_log_and_html_escaping) ... ok
+test_interarrival_is_per_id_and_uses_all_intervals (test_analyze.CANLogTests.test_interarrival_is_per_id_and_uses_all_intervals) ... ok
+test_rejects_decreasing_or_invalid_timestamp (test_analyze.CANLogTests.test_rejects_decreasing_or_invalid_timestamp) ... ok
+test_rejects_invalid_can_and_payload (test_analyze.CANLogTests.test_rejects_invalid_can_and_payload) ... ok
+test_rejects_missing_extra_duplicate_columns (test_analyze.CANLogTests.test_rejects_missing_extra_duplicate_columns) ... ok
+test_zero_length_payload_and_equal_timestamp (test_analyze.CANLogTests.test_zero_length_payload_and_equal_timestamp) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.004s
+
+OK
+Analyzed 8 frames across 3 IDs. Reports: /tmp/tmpht11kt5p
