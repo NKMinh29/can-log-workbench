@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAN Log Workbench</title><style>
+body{margin:0;background:#f2f5f8;color:#182b3a;font:16px/1.6 system-ui,sans-serif}
+main{max-width:1000px;margin:48px auto;padding:0 24px}header p{color:#486273}
+h1{font-size:36px;margin:6px 0}.tag{font:700 12px/1.5 system-ui;letter-spacing:.12em;color:#126b61}
+.cards{display:flex;flex-wrap:wrap;gap:16px;margin:28px 0}.card{background:white;padding:20px 28px;border-radius:12px;flex:1;min-width:140px}
+.card strong{display:block;font-size:30px}.table-wrap{overflow:auto;background:white;border-radius:12px}
+table{border-collapse:collapse;width:100%;white-space:nowrap}th,td{padding:14px 18px;text-align:right;border-bottom:1px solid #e7edf2}
+th:first-child,td:first-child{text-align:left}th{font-size:13px;background:#e9f0f5}.note{margin-top:28px;color:#486273}
+</style></head><body><main><header><div class="tag">ENGINEERING TOOL / OFFLINE REPORT</div>
+<h1>CAN Log Workbench</h1><p>Source: sample.csv · Data: synthetic</p></header>
+<section class="cards" aria-label="Summary"><div class="card">Frames<strong>8</strong></div>
+<div class="card">Unique IDs<strong>3</strong></div>
+<div class="card">Observation span (µs)<strong>4,500</strong></div></section>
+<h2>Observed interarrival times by ID</h2><div class="table-wrap"><table>
+<thead><tr><th scope="col">CAN ID (hex)</th><th scope="col">Frames</th><th scope="col">Payload bytes</th>
+<th scope="col">Min µs</th><th scope="col">Median µs</th><th scope="col">Mean µs</th><th scope="col">Max µs</th></tr></thead>
+<tbody><tr><td>000</td><td>1</td><td>0</td><td>—</td><td>—</td><td>—</td><td>—</td></tr><tr><td>123</td><td>4</td><td>8</td><td>1,000</td><td>1,000</td><td>1,333.333</td><td>2,000</td></tr><tr><td>200</td><td>3</td><td>3</td><td>2,000</td><td>2,000</td><td>2,000</td><td>2,000</td></tr></tbody></table></div><section class="note"><h2>Interpretation</h2><ul><li>Observed log interarrival times are not MCU processing times.</li><li>Bus utilization and frame loss cannot be inferred from this report.</li><li>Classic CAN 11-bit data frames only; the full file is held in memory.</li></ul>
+<p>Missing intervals are shown as — when an ID has fewer than two records.</p></section></main></body></html>
